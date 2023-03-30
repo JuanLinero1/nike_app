@@ -3,8 +3,8 @@ const NikeSneakers = [
     Collection: "Hu NMD",
     SneakersImg: [
       "./public/assets/product/blue.png", //blue, yellow
-      "./public/assets/product/purple.png",  //yello, black
-      "./public/assets/product/yellow.png", //purple, violet
+      "./public/assets/product/purple.png",  //purple, violet
+      "./public/assets/product/yellow.png", //yello, black 
     ],
     ShoeType: ["blue", "purple", "yellow"],
     Data: {

@@ -62,9 +62,6 @@ body {
 }
 
 
-
-
-
 @keyframes NikeLogo {
   from {
     transform: translateY(200px) rotateZ(90deg);
@@ -119,9 +116,6 @@ body {
     opacity: 1;
   }
 }
-
-
-
 .product .bg-text {
   width: 100px;
   /* Need a specific value to work */
@@ -130,7 +124,7 @@ body {
   animation-name: NikeLogo;
   animation-duration: 2s;
   animation-timing-function: ease-out;
-  animation-delay: 1s;
+  animation-delay: 2s;
   animation-iteration-count: 1s;
   animation-direction: normal;
   animation-fill-mode: forwards;
@@ -148,18 +142,26 @@ body {
   color: #E5E5E5;
   font-style: italic;
 }
-
+@keyframes red_box {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1; 
+  }
+}
 
 
 .product .product__size {
   animation-name: LeftSide;
   animation-duration: 2s;
   animation-timing-function: ease-out;
-  animation-delay: 0s;
+  animation-delay: 3s;
   animation-iteration-count: 1s;
   animation-direction: normal;
   animation-fill-mode: forwards;
 
+  opacity: 0;
   width: calc(100% / 4);
   /* 1/4 */
   height: 100%;
@@ -211,7 +213,7 @@ body {
   animation-name: NikeShoe;
   animation-duration: 2s;
   animation-timing-function: ease-out;
-  animation-delay: 3s;
+  animation-delay: 5s;
   animation-iteration-count: 1s;
   animation-direction: normal;
   animation-fill-mode: forwards;
@@ -229,11 +231,12 @@ body {
   animation-name: RightSide;
   animation-duration: 2s;
   animation-timing-function: ease-out;
-  animation-delay: 0s;
+  animation-delay: 3s;
   animation-iteration-count: 1s;
   animation-direction: normal;
   animation-fill-mode: forwards;
 
+  opacity: 0;
   width: calc(100% / 4);
   /* 1/4 */
   height: 100%;
@@ -346,6 +349,14 @@ body {
 }
 
 .red_box {
+  animation-name: red_box;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+
   position: absolute;
   bottom: -130px;
 }

@@ -19,7 +19,7 @@ function colorChanger(SOURCE) {
         ButtonChanger[0].classList.add(`changer__active`)
         setTimeout(() => {
             ButtonChanger[0].classList.remove(`changer__active`)
-        }, 500)
+        }, 5000)
 
         header(SOURCE[0].Collection, SOURCE[0].ShoeType[0])
         Img(SOURCE[0].SneakersImg[0])

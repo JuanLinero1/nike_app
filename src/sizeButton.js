@@ -14,7 +14,7 @@ function sizeButton(SOURCE) {
     })
 
     for (let i = 0; i < BtnGroup.length; i++) {
-        BtnGroup[i].addEventListener("click", () => {
+        BtnGroup[i].addEventListener("touchend", () => {
             BtnGroup[i].classList.toggle("btn__size-touch")
             discountPrice(SOURCE[0].Data.Cost[i], SOURCE)
         })

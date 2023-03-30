@@ -116,6 +116,18 @@ body {
     opacity: 1;
   }
 }
+@keyframes red_box {
+  from{
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to{
+    transform: translate(0px);
+    opacity: 1; 
+  }
+}
+
+
 .product .bg-text {
   width: 100px;
   /* Need a specific value to work */
@@ -141,14 +153,6 @@ body {
   font-size: 7.5rem;
   color: #E5E5E5;
   font-style: italic;
-}
-@keyframes red_box {
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1; 
-  }
 }
 
 
@@ -298,7 +302,7 @@ body {
   align-items: center;
   flex-flow: column wrap;
   position: relative; 
-  z-index: 3;
+  z-index: 1;
 }
 .box h4{
   animation-name: SwipeEtiquette;
@@ -359,4 +363,5 @@ body {
 
   position: absolute;
   bottom: -130px;
+  z-index: -1;
 }
